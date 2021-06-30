@@ -29,7 +29,7 @@ def new():
       if not request.form['num1'] or not request.form['num2'] :
          flash('Please enter all the fields', 'error')
       else:
-         res=int(request.form['num1'])-int(request.form['num2'])
+         res=int(request.form['num1'])+int(request.form['num2'])
          print(int(request.form['num1'])+int(request.form['num2']))
          # res=int(request.form['num1'])+int(request.form['num2'])
          # print(request.form['num1'], request.form['num2'], request.form['total'])
