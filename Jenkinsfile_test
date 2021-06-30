@@ -36,7 +36,7 @@ def buildApp() {
 def testApp(environment) {
 
 	def containerName = ''
-	def port = ''
+	
 
 	if ("${environment}" == 'test') {
 		containerName = "app_test"
