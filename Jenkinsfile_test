@@ -13,9 +13,9 @@ pipeline {
             steps { buildApp() }
 		}
 
-	stage("Test") {
-	     steps { testApp('test') }
-	}
+		stage("Test") {
+	    	 steps { testApp('test') }
+		}
 
         stage("Deploy - Dev") {
             steps { deploy('dev') }
